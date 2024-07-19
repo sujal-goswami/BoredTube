@@ -7,16 +7,16 @@ import {ApiResponse} from "../utils/ApiResponse.js"
 import {asyncHandler} from "../utils/asyncHandler.js"
 
 const getChannelStats = asyncHandler(async (req, res) => {
-	const { channelId } = req.params
+	const userId = req.user?._id
 
-    if (!isValidObjectId(channelId)) {
-        throw new ApiError(400, "Invalid channel ID");
+    if (!isValidObjectId(userId)) {
+        throw new ApiError(400, "Invalid user ID");
     }
-
+    
 	const totalSubscribers = await Subscription.aggregate([
         {
             $match: {
-                channel: new mongoose.Types.ObjectId(channelId)
+                channel: new mongoose.Types.ObjectId(userId)
             }
         },
         {
@@ -32,7 +32,7 @@ const getChannelStats = asyncHandler(async (req, res) => {
     const video = await Video.aggregate([
         {
             $match: {
-                owner: new mongoose.Types.ObjectId(channelId)
+                owner: new mongoose.Types.ObjectId(userId)
             }
         },
         {
@@ -81,16 +81,16 @@ const getChannelStats = asyncHandler(async (req, res) => {
 })
 
 const getChannelVideos = asyncHandler(async (req, res) => {
-    const { channelId } = req.params
+    const userId = req.user?._id
 
-    if (!isValidObjectId(channelId)) {
-        throw new ApiError(400, "Invalid channel ID");
+    if (!isValidObjectId(userId)) {
+        throw new ApiError(400, "Invalid user ID");
     }
 
     const videos = await Video.aggregate([
         {
             $match: {
-                owner: new mongoose.Types.ObjectId(channelId),
+                owner: new mongoose.Types.ObjectId(userId),
             }
         },
 		{
