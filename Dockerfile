@@ -2,7 +2,7 @@
 FROM node:lts-alpine AS base
 WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
-RUN npm install
+RUN npm ci
 
 # Stage 2: Development environment
 FROM base AS development
