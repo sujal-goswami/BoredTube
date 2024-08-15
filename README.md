@@ -162,7 +162,7 @@ This project uses GitHub Actions for CI/CD. The workflows are defined in the `.g
 - Test Workflow
 
 ## Contributing
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. Let's make 🎬BoredTube even better together! for more details refer [CONTRIBUTING.md]() .
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. Let's make 🎬BoredTube even better together! for more details refer [CONTRIBUTING.md](https://github.com/sujal-goswami/BoredTube/blob/main/CONTRIBUTING.md) .
 
 ## License
-🎬BoredTube is licensed under the [MIT License](). Feel free to modify, distribute, and use the code for personal or commercial projects.
+🎬BoredTube is licensed under the [MIT License](https://github.com/sujal-goswami/BoredTube/blob/main/LICENSE). Feel free to modify, distribute, and use the code for personal or commercial projects.

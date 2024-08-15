@@ -33,7 +33,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build-and-publish
+    needs: build-and-publish-docker-image
 
     steps:
       - name: Checkout code
