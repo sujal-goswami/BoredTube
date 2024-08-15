@@ -31,7 +31,15 @@ jobs:
           tags: sujalgoswami/boredtube:latest
           target: production
 
-      - name: remote ssh into VPS and deploy
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-publish
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Remote SSH into VPS and deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
