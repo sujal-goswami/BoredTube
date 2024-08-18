@@ -142,7 +142,7 @@ To build and run the application using Docker:
 ```
     docker run -d --name boredtube -p 8000:8000 \
     -e PORT=8000 \
-    -e MONGODB_URI=your_mongodb_uri \
+    -e MONGODB_URL=your_mongodb_url \
     -e CORS_ORIGIN=your_cors_origin \
     -e ACCESS_TOKEN_SECRET=your_access_token_secret \
     -e ACCESS_TOKEN_EXPIRY=your_access_token_expiry \
