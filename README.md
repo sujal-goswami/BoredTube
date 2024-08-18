@@ -7,7 +7,7 @@
 | Content           | Link                                                                             |
 | ----------------- | -------------------------------------------------------------------------------- |
 | API Documentation | [click here](https://documenter.getpostman.com/view/36524668/2sA3s7ioWe)         |
-| Model             | [click here ](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj) |
+| Data Model        | [click here ](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)              |
 
 ## Features
 
@@ -140,18 +140,18 @@ To build and run the application using Docker:
 2) Run the Docker container:
 
 ```
-docker run -d --name boredtube -p 8000:8000 \
--e PORT=8000 \
--e MONGODB_URI=your_mongodb_uri \
--e CORS_ORIGIN=your_cors_origin \
--e ACCESS_TOKEN_SECRET=your_access_token_secret \
--e ACCESS_TOKEN_EXPIRY=your_access_token_expiry \
--e REFRESH_TOKEN_SECRET=your_refresh_token_secret \
--e REFRESH_TOKEN_EXPIRY=your_refresh_token_expiry \
--e CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name \
--e CLOUDINARY_API_KEY=your_cloudinary_api_key \
--e CLOUDINARY_API_SECRET=your_cloudinary_api_secret \
-boredtube:latest
+    docker run -d --name boredtube -p 8000:8000 \
+    -e PORT=8000 \
+    -e MONGODB_URI=your_mongodb_uri \
+    -e CORS_ORIGIN=your_cors_origin \
+    -e ACCESS_TOKEN_SECRET=your_access_token_secret \
+    -e ACCESS_TOKEN_EXPIRY=your_access_token_expiry \
+    -e REFRESH_TOKEN_SECRET=your_refresh_token_secret \
+    -e REFRESH_TOKEN_EXPIRY=your_refresh_token_expiry \
+    -e CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name \
+    -e CLOUDINARY_API_KEY=your_cloudinary_api_key \
+    -e CLOUDINARY_API_SECRET=your_cloudinary_api_secret \
+    boredtube:latest
 ```
 
 ### Continuous Integration and Deployment
