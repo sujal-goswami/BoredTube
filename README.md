@@ -1,7 +1,7 @@
 # 🎬BoredTube
 ## Introduction
 
->🎬 **BoredTube** is a video streaming service similar to YouTube, with built-in Twitter-like features. This project provides a complete video management system. It includes user management, video upload and editing, tweet management, subscription management, playlist management, and more. Built with Node.js, Express.js, and MongoDB, BoredTube is strong and can grow easily. It connects with Cloudinary for storing media and uses JWT for secure login. With detailed API documentation and a focus on user experience, BoredTube aims to offer a smooth and efficient video management system.
+>🎬 **BoredTube** is a video sharing service similar to YouTube, with built-in Twitter-like features. This project provides a complete video management system. It includes user management, video upload and editing, tweet management, subscription management, playlist management, and more. Built with Node.js, Express.js, and MongoDB, BoredTube is strong and can grow easily. It connects with Cloudinary for storing media and uses JWT for secure login. With detailed API documentation and a focus on user experience, BoredTube aims to offer a smooth and efficient video management system.
 
 ## Important links
 | Content           | Link                                                                             |
